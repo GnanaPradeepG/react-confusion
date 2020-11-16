@@ -13,13 +13,13 @@ class DishDetail extends Component {
         if (dish != null)
             return (
                 <div className="col-12 col-md-5 m-1">
-                <Card>
-                    <CardImg top src={dish.image} alt={dish.name} />
-                    <CardBody>
-                        <CardTitle>{dish.name}</CardTitle>
-                        <CardText>{dish.description}</CardText>
-                    </CardBody>
-                </Card>
+                    <Card>
+                        <CardImg top src={dish.image} alt={dish.name} />
+                        <CardBody>
+                            <CardTitle>{dish.name}</CardTitle>
+                            <CardText>{dish.description}</CardText>
+                        </CardBody>
+                    </Card>
                 </div>
             );
         else
@@ -64,11 +64,11 @@ class DishDetail extends Component {
 
         return (
             <div className="row">
-                
-                    {this.renderDish(this.props.selectedDish)}
 
-                    {this.renderComments()}
-                </div>
+                {this.renderDish(this.props.selectedDish)}
+
+                {this.renderComments()}
+            </div>
         )
     }
 }
